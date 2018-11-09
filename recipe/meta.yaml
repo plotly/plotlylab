@@ -1,0 +1,40 @@
+{% set version = "0.1" %}
+
+package:
+  name: plotlylab
+  version: {{ version }}
+  
+source:
+  path: ../
+
+build:
+  noarch: python
+  number: 0
+  entry_points:
+    - plotly-lab = plotlylab.labapp:main
+    - plotly-labextension = plotlylab.labextensionapp:main
+
+requirements:
+  build:
+    - python >=3
+    - pip
+    - nodejs >=8.0,<10.0
+    - jupyterlab >=0.35
+  run:
+    - python >=3
+    - jupyterlab >=0.35
+
+    # Python packages corresponding to extensions installed in build.sh
+    - ipywidgets >=7.2
+    - plotly =3.4.0
+    - plotly-orca
+    - psutil
+    - dash
+    - dash-core-components
+    - dash-html-components
+
+about:
+  home: https://github.com/measejm1/jupyterlab_delux
+  license: BSD 3-Clause
+  license_file: LICENSE
+  summary: A proof-of-concept build of JupyterLab with the ipywidgets and bqplot extensions preinstalled
