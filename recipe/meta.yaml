@@ -1,4 +1,4 @@
-{% set version = "0.1" %}
+{% set version = "0.0.1" %}
 
 package:
   name: plotlylab
@@ -26,7 +26,7 @@ requirements:
 
     # Python packages corresponding to extensions installed in build.sh
     - ipywidgets >=7.2
-    - plotly =3.4.0
+    - plotly =3.4.1
     - plotly-orca
     - psutil
     - dash

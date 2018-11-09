@@ -3,7 +3,7 @@ from setuptools import setup
 setup_args = dict(
     name='plotlylab',
     description='The Plotly JupyterLab distribution',
-    version='0.1',
+    version='0.0.1',
     packages=['plotlylab'],
     entry_points={'console_scripts': [
         'plotly-lab = plotlylab.labapp:main',
