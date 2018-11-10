@@ -31,6 +31,24 @@ $ conda create -n plotlylab -c plotly python=3.6 plotlylab
 $ conda activate plotlylab
 $ plotly-lab 
 ``` 
+
+### Other commands
+
+List preinstalled JuptyerLab extensions
+
+```
+$ plotly-labextension list
+```
+ 
+Install an additional extension into plotlylab (requires nodejs)
+```
+$ plotly-labextension install some-extension
+```
+
+Launch plain JupyterLab (no preinstalled extensions)
+```
+$ jupyter-lab
+```
  
 ### Build instructions
 Build the `plotlylab` conda package with
