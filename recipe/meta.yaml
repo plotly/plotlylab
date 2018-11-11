@@ -1,4 +1,4 @@
-{% set version = "0.0.1" %}
+{% set version = "0.0.2" %}
 
 package:
   name: plotlylab
@@ -32,6 +32,9 @@ requirements:
     - dash
     - dash-core-components
     - dash-html-components
+    - r-irkernel
+    - r-plotly
+    - r-processx
 
 about:
   home: https://github.com/measejm1/jupyterlab_delux

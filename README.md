@@ -15,7 +15,7 @@ see https://github.com/jonmmease/jupyterlab_delux
  4. Create and activate a new conda environment for plotlylab
  
 ```
- $ conda create -n try_plotlylab -c plotly -c conda-forge -c /path/to/plotlylab-channel python=3.6 plotlylab
+ $ conda create -n try_plotlylab -c plotly -c conda-forge -c r -c /path/to/plotlylab-channel python=3.6 plotlylab
  $ conda activate try_plotlylab
 ``` 
 
@@ -27,7 +27,7 @@ $ plotly-lab
 
 ### Installation instructions (Goal)
 ```
-$ conda create -n plotlylab -c plotly python=3.6 plotlylab
+$ conda create -n plotlylab -c plotly -c r python=3.6 plotlylab
 $ conda activate plotlylab
 $ plotly-lab 
 ``` 
@@ -53,12 +53,12 @@ $ jupyter-lab
 ### Build instructions
 Build the `plotlylab` conda package with
 ```bash
-$ conda build -c plotly -c conda-forge recipe/
+$ conda build -c plotly -c conda-forge -c r recipe/
 ```
 
 Then test it out by creating a new conda environment
 
 ```
-$ conda create -n try_plotlylab -c plotly -c conda-forge --use-local python=3.6 plotlylab
+$ conda create -n try_plotlylab -c plotly -c conda-forge -c r --use-local python=3.6 plotlylab
 $ conda activate try_plotlylab
 ```
