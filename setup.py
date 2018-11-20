@@ -8,6 +8,7 @@ setup_args = dict(
     entry_points={'console_scripts': [
         'plotly-lab = plotlylab.labapp:main',
         'plotly-labextension = plotlylab.labextensionapp:main',
+        'plotly-labhub = plotlylab.labhubapp:main'
     ]},
     author='The Plotly Development Team',
     url='https://github.com/plotly/plotlylab',
