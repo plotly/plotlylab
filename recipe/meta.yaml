@@ -24,14 +24,30 @@ requirements:
     - python >=3
     - jupyterlab >=0.35
 
-    # Python packages corresponding to extensions installed in build.sh
-    - ipywidgets >=7.2
+    # ## Python packages corresponding to extensions installed in build.sh ##
+
+    # plotly.py and optional dependencies
     - plotly =3.4.1
+    - ipywidgets >=7.2
     - plotly-orca
     - psutil
+    - pandas
+    - numpy
+    - shapely
+    - pyshp
+    - geopandas
+    - scipy
+    - matplotlib
+    - scikit-learn
+
+    # dash
     - dash
     - dash-core-components
     - dash-html-components
+    # Not on anaconda cloud yet
+    # - dash-table
+
+    # R support
     - r-irkernel
     - r-plotly
     - r-processx
