@@ -35,6 +35,7 @@ requirements:
     - r-irkernel
     - r-plotly
     - r-processx
+    - openjdk
 
 about:
   home: https://github.com/measejm1/jupyterlab_delux
