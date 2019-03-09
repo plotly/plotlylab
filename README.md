@@ -3,8 +3,8 @@ WIP project to bundle a collection of Plotly-related JupyterLab extensions
 into a single conda package.  For background on this approach,
 see https://github.com/jonmmease/jupyterlab_delux
 
-**Note:** A conda environment with PlotlyLab installed with take up just
-under 3GB of disk space
+**Note:** A conda environment with PlotlyLab installed with take up around
+3.5 GB of disk space
 
 ### Installation instructions
 
