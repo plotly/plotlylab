@@ -1,7 +1,7 @@
-name: plotlylab_0.1.0a1
+name: plotlylab_0.1.0a2
 channels:
   - main
   - plotly
   - r
 dependencies:
-  - plotlylab =0.1.0a1
+  - plotlylab =0.1.0a2
