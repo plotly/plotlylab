@@ -35,13 +35,6 @@ requirements:
     - psutil
     - pandas
     - numpy
-    - shapely
-    - pyshp
-    - geopandas
-    - scipy
-    - scikit-learn
-    - scikit-image
-    - pillow
 
     # dash (conda-forge channel)
     - dash
