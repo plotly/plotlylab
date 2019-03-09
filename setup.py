@@ -1,9 +1,37 @@
-from setuptools import setup
+from setuptools import setup, Command
+
+version = '0.1.0a1'
+
+
+class WriteEnvironmentFileCommand(Command):
+    description = 'Generate class hierarchy from Plotly JSON schema'
+    user_options = []
+
+    def initialize_options(self):
+        pass
+
+    def finalize_options(self):
+        pass
+
+    def run(self):
+        with open('environments/plotlylab.yaml', 'w') as f:
+            f.write("""\
+name: plotlylab_{version}
+channels:
+  - main
+  - conda-forge
+  - plotly
+  - plotly/label/test
+  - r
+dependencies:
+  - plotlylab =plotlylab_{version}
+""".format(version=version))
+
 
 setup_args = dict(
     name='plotlylab',
     description='The Plotly JupyterLab distribution',
-    version='0.0.3',
+    version=version,
     packages=['plotlylab'],
     entry_points={'console_scripts': [
         'plotly-lab = plotlylab.labapp:main',
@@ -14,6 +42,7 @@ setup_args = dict(
     url='https://github.com/plotly/plotlylab',
     license='MIT',
     platforms="Linux, Mac OS X, Windows",
+    cmdclass=dict(writeenvironment=WriteEnvironmentFileCommand)
 )
 
 setup(**setup_args)

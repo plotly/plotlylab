@@ -6,36 +6,33 @@ see https://github.com/jonmmease/jupyterlab_delux
 **Note:** A conda environment with PlotlyLab installed with take up just
 under 3GB of disk space
 
-### Installation instructions (now)
+### Installation instructions
 
  1. Download and install miniconda: https://conda.io/miniconda.html
  
- 2. Download latest `plotlylab-channel.zip` artifact from
- https://github.com/plotly/plotlylab/releases.
- 
- 3. Unzip artifact somewhere (i.e. `/path/to/plotlylab_channel/`)
- 
- 4. Create and activate a new conda environment for plotlylab
+ 2. Create and activate a new conda environment for plotlylab
  
 ```
- $ conda create -n try_plotlylab -c plotly -c conda-forge -c r -c /path/to/plotlylab-channel python=3.6 plotlylab
- $ conda activate try_plotlylab
+ $ conda env create --file https://raw.githubusercontent.com/plotly/plotlylab/master/environments/plotlylab.yaml
+ $ conda activate plotlylab_{version}
 ``` 
 
- 5. Launch plotlylab
+where `{version}` is current plotlylab version. Note that the full
+`conda activate` command will be displayed at the completion of the
+`conda env create` command.
+
+ 3. Launch plotlylab
  
 ```
 $ plotly-lab
 ```
-
-### Installation instructions (Goal)
-```
-$ conda create -n plotlylab -c plotly -c r python=3.6 plotlylab
-$ conda activate plotlylab
-$ plotly-lab 
-``` 
-
+ 
 ### Other commands
+
+List preinstalled conda packages
+```
+$ conda list
+```
 
 List preinstalled JuptyerLab extensions
 

@@ -4,7 +4,7 @@
 package:
   name: plotlylab
   version: {{ version }}
-  
+
 source:
   path: ../
 
@@ -19,18 +19,19 @@ requirements:
   build:
     - python >=3
     - pip
-    - nodejs >=8.0,<10.0
-    - jupyterlab >=0.35
+    - nodejs
+    - jupyterlab =0.35
   run:
-    - python >=3
-    - jupyterlab >=0.35
-
     # ## Python packages corresponding to extensions installed in build.sh ##
 
-    # plotly.py and optional dependencies
-    - plotly =3.4.1
-    - ipywidgets >=7.2
+    # plotly channel
+    - plotly =3.7.0
     - plotly-orca
+    - colorlover
+
+    # main channel
+    - ipywidgets >=7.2
+    - jupyterlab =0.35
     - psutil
     - pandas
     - numpy
@@ -38,24 +39,25 @@ requirements:
     - pyshp
     - geopandas
     - scipy
-    - matplotlib
     - scikit-learn
+    - scikit-image
+    - pillow
 
-    # dash
+    # dash (conda-forge channel)
     - dash
     - dash-core-components
     - dash-html-components
-    # Not on anaconda cloud yet
-    # - dash-table
+    - dash-table
+    - dash-daq
 
-    # R support
+    # R support (r channel)
     - r-irkernel
     - r-plotly
     - r-processx
     - openjdk
 
 about:
-  home: https://github.com/measejm1/jupyterlab_delux
-  license: BSD 3-Clause
+  home: https://github.com/plotly/plotlylab
+  license: MIT License
   license_file: LICENSE
-  summary: A proof-of-concept build of JupyterLab with the ipywidgets and bqplot extensions preinstalled
+  summary: A proof-of-concept JupyterLab distribution integrating Plotly technologies
