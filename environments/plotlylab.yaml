@@ -1,9 +1,7 @@
 name: plotlylab_0.1.0a1
 channels:
   - main
-  - conda-forge
   - plotly
-  - plotly/label/test
   - r
 dependencies:
   - plotlylab =0.1.0a1

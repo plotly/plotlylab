@@ -19,9 +19,7 @@ class WriteEnvironmentFileCommand(Command):
 name: plotlylab_{version}
 channels:
   - main
-  - conda-forge
   - plotly
-  - plotly/label/test
   - r
 dependencies:
   - plotlylab ={version}

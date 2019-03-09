@@ -61,12 +61,12 @@ $ jupyter-lab
 ### Build instructions
 Build the `plotlylab` conda package with
 ```bash
-$ conda build -c plotly -c conda-forge -c r recipe/
+$ conda build -c plotly -c r recipe/
 ```
 
 Then test it out by creating a new conda environment
 
 ```
-$ conda create -n try_plotlylab -c plotly -c conda-forge -c r --use-local python=3.6 plotlylab
+$ conda create -n try_plotlylab -c plotly -c r --use-local python=3.6 plotlylab
 $ conda activate try_plotlylab
 ```

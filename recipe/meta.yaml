@@ -9,8 +9,8 @@ source:
   path: ../
 
 build:
+  number: 1
   noarch: python
-  number: 0
   entry_points:
     - plotly-lab = plotlylab.labapp:main
     - plotly-labextension = plotlylab.labextensionapp:main
