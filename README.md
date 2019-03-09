@@ -10,26 +10,14 @@ see https://github.com/jonmmease/jupyterlab_delux
 
  1. Download and install miniconda: https://conda.io/miniconda.html
  
- 2. Download the
- [environments/plotlylab.yaml](https://raw.githubusercontent.com/plotly/plotlylab/master/environments/plotlylab.yaml)
- environment file using your web browser or `wget`.
- 
-```
-$ wget https://raw.githubusercontent.com/plotly/plotlylab/master/environments/plotlylab.yaml
-```
- 
- 3. Create and activate a new conda environment for plotlylab
- 
-```
- $ conda env create --file plotlylab.yaml
- $ conda activate plotlylab_{version}
-``` 
+ 2. Create a new conda environment and install PlotlyLab 
 
-where `{version}` is current plotlylab version. Note that the full
-`conda activate` command will be displayed at the completion of the
-`conda env create` command.
+```
+$ conda create -n plotlylab -c plotly -c r python=3.6 plotlylab
+$ conda activate plotlylab
+```
 
- 4. Launch plotlylab
+ 3. Launch plotlylab
  
 ```
 $ plotly-lab
@@ -56,6 +44,18 @@ $ plotly-labextension install some-extension
 Launch plain JupyterLab (no preinstalled extensions)
 ```
 $ jupyter-lab
+```
+
+Update version of PlotlyLab after new releases
+
+```
+$ conda update -c plotly plotlylab
+```
+ 
+Uninstall `plotlylab` environment
+
+```
+$ conda remove -n plotlylab --all
 ```
  
 ### Build instructions
