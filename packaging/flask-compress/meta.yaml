@@ -1,0 +1,41 @@
+{% set name = "flask-compress" %}
+{% set version = "1.4.0" %}
+
+package:
+  name: "{{ name|lower }}"
+  version: "{{ version }}"
+
+source:
+  git_url: https://github.com/colour-science/flask-compress.git
+  git_tag: "v{{ version }}"
+
+build:
+  number: 0
+  noarch: python
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
+
+requirements:
+  host:
+    - flask
+    - pip
+    - python
+  run:
+    - flask
+    - python
+
+test:
+  imports:
+    - flask_compress
+
+about:
+  home: https://libwilliam.github.io/flask-compress/
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE.txt
+  summary: Compress responses in your Flask app with gzip.
+  doc_url:
+  dev_url: https://github.com/colour-science/flask-compress
+
+extra:
+  recipe-maintainers:
+    - jonmmease

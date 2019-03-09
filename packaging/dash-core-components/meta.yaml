@@ -1,0 +1,41 @@
+{% set name = "dash-core-components" %}
+{% set version = "0.44.0" %}
+
+package:
+  name: "{{ name|lower }}"
+  version: "{{ version }}"
+
+source:
+  git_url: https://github.com/plotly/dash-core-components.git
+  git_tag: "v{{ version }}"
+
+build:
+  number: 0
+  noarch: python
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
+
+requirements:
+  host:
+    - dash
+    - pip
+    - python
+  run:
+    - dash
+    - python
+
+test:
+  imports:
+    - dash_core_components
+
+about:
+  home: https://dash.plot.ly/dash-core-components
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: Dash UI core component suite
+  doc_url: https://dash.plot.ly/dash-core-components
+  dev_url: https://github.com/plotly/dash-core-components
+
+extra:
+  recipe-maintainers:
+    - jonmmease

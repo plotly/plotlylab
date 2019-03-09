@@ -1,0 +1,47 @@
+{% set name = "dash-daq" %}
+{% set version = "0.1.4" %}
+
+package:
+  name: "{{ name|lower }}"
+  version: "{{ version }}"
+
+source:
+  git_url: https://github.com/plotly/dash-daq.git
+  # Replace with "v{{ version }}" when dash-daq adopts release
+  # tagging convention
+  git_tag: 1514ab818aa643027267a1c0519bccb77afc9a49
+
+build:
+  number: 0
+  noarch: python
+  script: |
+    npm install
+    npm run prepublish
+    {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv
+
+requirements:
+  host:
+    - pip
+    - python
+    - dash
+    - nodejs
+  run:
+    - python
+    - dash
+
+test:
+  imports:
+    - dash_daq
+
+about:
+  home: https://dash.plot.ly/dash-daq
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: DAQ components for Dash
+  doc_url: https://dash.plot.ly/dash-daq
+  dev_url: https://github.com/plotly/dash-daq
+
+extra:
+  recipe-maintainers:
+    - jonmmease
