@@ -6,4 +6,4 @@ channels:
   - plotly/label/test
   - r
 dependencies:
-  - plotlylab =plotlylab_0.1.0a1
+  - plotlylab =0.1.0a1

@@ -24,7 +24,7 @@ channels:
   - plotly/label/test
   - r
 dependencies:
-  - plotlylab =plotlylab_{version}
+  - plotlylab ={version}
 """.format(version=version))
 
 
