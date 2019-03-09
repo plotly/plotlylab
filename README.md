@@ -22,6 +22,10 @@ $ conda activate plotlylab
 ```
 $ plotly-lab
 ```
+
+ 4. Try out the notebooks in the
+ [`notebooks/`](https://github.com/plotly/plotlylab/tree/master/notebooks)
+ directory for a guided tour
  
 ### Other commands
 
