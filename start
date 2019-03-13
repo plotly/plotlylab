@@ -1,0 +1,10 @@
+#!/usr/bin/env python3
+import sys
+import shutil
+import subprocess
+
+cmd = ['plotly-lab', '--dev-mode'] + sys.argv[2:]
+
+print(cmd, flush=True)
+
+subprocess.run(cmd)

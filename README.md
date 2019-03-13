@@ -3,6 +3,10 @@ WIP project to bundle a collection of Plotly-related JupyterLab extensions
 into a single conda package.  For background on this approach,
 see https://github.com/jonmmease/jupyterlab_delux
 
+Try now with Binder:
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/plotly/plotlylab/master)
+
 **Note:** A conda environment with PlotlyLab installed with take up around
 3.5 GB of disk space
 
