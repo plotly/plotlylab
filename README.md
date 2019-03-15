@@ -10,6 +10,18 @@ Try now with Binder:
 **Note:** A conda environment with PlotlyLab installed with take up around
 3.5 GB of disk space
 
+### Demo (screencasts)
+
+Usage and ideas behind PlotlyLab
+
+1. [PlotlyLab prototype overview](https://drive.google.com/file/d/1AkCGyemyZSNpvW9plDGJPQ2K3MCidIOW/view?usp=sharing)
+
+2. [PlotlyLab as a conda package](https://drive.google.com/file/d/1YrEOTn37Ofti3ubHfgyJlfTJE9d1Vjy3/view?usp=sharing)
+
+3. [Ideas for future directions](https://drive.google.com/file/d/1PlOMGmbcqLDHnJdOe_DAen3U1k59KR9n/view?usp=sharing)
+
+4. [R language support](https://drive.google.com/file/d/1tZRQP2zUh5-eD1W8IKuBQj1DJnllDh6e/view?usp=sharing)
+
 ### Installation instructions
 
  1. Download and install miniconda: https://conda.io/miniconda.html
