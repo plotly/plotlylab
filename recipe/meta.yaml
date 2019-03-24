@@ -23,12 +23,6 @@ requirements:
     - jupyterlab =0.35
   run:
     # ## Python packages corresponding to extensions installed in build.sh ##
-
-    # plotly channel
-    - plotly =3.7.0
-    - plotly-orca
-    - colorlover
-
     # main channel
     - ipywidgets >=7.2
     - jupyterlab =0.35
@@ -36,7 +30,14 @@ requirements:
     - pandas
     - numpy
 
-    # dash (conda-forge channel)
+    # plotly
+    - plotly =3.7.1
+    - jupyterlab-dash =0.1.0a2
+    - plotly_express
+    - plotly-orca
+    - colorlover
+
+    # dash
     - dash
     - dash-core-components
     - dash-html-components
@@ -51,6 +52,6 @@ requirements:
 
 about:
   home: https://github.com/plotly/plotlylab
-  license: MIT License
+  license: MIT
   license_file: LICENSE
   summary: A proof-of-concept JupyterLab distribution integrating Plotly technologies
