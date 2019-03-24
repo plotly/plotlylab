@@ -3,7 +3,7 @@ import sys
 import shutil
 import subprocess
 
-cmd = ['plotly-lab', '--dev-mode'] + sys.argv[2:]
+cmd = ['plotly-lab'] + sys.argv[2:]
 
 print(cmd, flush=True)
 
