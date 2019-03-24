@@ -16,7 +16,7 @@ jupyter labextension install plotlywidget@0.8.0 --no-build
 jupyter labextension install @jupyterlab/plotly-extension@0.18 --no-build
 jupyter labextension install jupyterlab-chart-editor@1.1 --no-build
 jupyter labextension install git+ssh://git@github.com/plotly/jupyterlab_plotlyhelp.git --no-build
-jupyter labextension install git+ssh://git@github.com/plotly/plotlylab-light-theme.git --no-build
+jupyter labextension install plotlylab-light-theme --no-build
 jupyter labextension install @mflevine/jupyterlab_html --no-build
 
 jupyter lab build --name='PlotlyLab'
