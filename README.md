@@ -31,7 +31,7 @@ Usage and ideas behind PlotlyLab
  2. Create a new conda environment and install PlotlyLab 
 
 ```
-$ conda create -n plotlylab -c plotly -c r python=3.6 plotlylab
+$ conda create -n plotlylab -c plotly -c r python plotlylab
 $ conda activate plotlylab
 ```
 
