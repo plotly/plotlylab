@@ -1,4 +1,11 @@
 ## PlotlyLab
+
+<div align="center">
+  <a href="https://dash.plotly.com/project-maintenance">
+    <img src="https://dash.plotly.com/assets/images/maintained-by-plotly.png" width="400px" alt="Maintained by Plotly">
+  </a>
+</div>
+
 WIP project to bundle a collection of Plotly-related JupyterLab extensions
 into a single conda package.  For background on this approach,
 see https://github.com/jonmmease/jupyterlab_delux
